@@ -55,19 +55,19 @@ a:active {
 
 a::before {
   -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 a::after {
   -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page-header {
@@ -83,14 +83,14 @@ a::after {
   width: 200px;
   height: 70px;
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -109,15 +109,15 @@ a::after {
   display: flex;
   width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 40px;
 }
 
 .profile__portrait {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   margin-right: 40px;
   border-radius: 50%;
   width: 250px;
@@ -126,8 +126,8 @@ a::after {
 
 .profile__content {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
 .about-main {
@@ -135,15 +135,15 @@ a::after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -161,11 +161,11 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow-x: auto;
 }
 
@@ -226,7 +226,7 @@ button:focus,
 
 .button__secondary {
   background-color: #e0b354;
-  color: darkgrey;
+  color: black;
 }
 
 .about-main__list {
@@ -240,11 +240,11 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -255,24 +255,24 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-  animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* start grid fallback */
@@ -358,47 +358,47 @@ button:focus,
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
