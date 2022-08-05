@@ -57,7 +57,6 @@ a:visited {
 
 a:hover,
 a:focus {
-  /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
@@ -102,21 +101,23 @@ a::after {
 
 .profile {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  flex: 1 1 auto;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
+.profile__content {
+  margin: 0 20px;
+}
+
 .profile__portrait {
-  flex: 0 0 auto;
-  margin-right: 40px;
   border-radius: 50%;
   width: 250px;
   height: 250px;
-}
-
-.profile__content {
-  flex: 0 1 auto;
+  margin: 0 20px;
 }
 
 .about-main {
@@ -168,10 +169,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
@@ -193,10 +191,10 @@ button:focus,
 }
 
 .page-footer {
-  clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 .sun {
@@ -216,7 +214,6 @@ button:focus,
   display: inline-block;
   width: 33%;
 }
-
 /* end grid fallback */
 
 @supports (display: grid) {
