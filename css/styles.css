@@ -21,7 +21,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -220,6 +222,10 @@ button:focus,
   width: 33%;
 }
 /* end grid fallback */
+
+.screenshot {
+  width: 100%;
+}
 
 @supports (display: grid) {
   .grid {
