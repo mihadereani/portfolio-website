@@ -142,6 +142,8 @@ a::after {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 th {
@@ -316,4 +318,10 @@ span {
   color: var(--span-color);
   font-size: 12px;
   padding: 3px;
+}
+
+#about-picture {
+  max-width: 340px;
+  justify-content: center;
+  margin: auto;
 }
