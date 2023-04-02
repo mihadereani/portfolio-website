@@ -7,14 +7,16 @@ Secondary Color (Orange): #e0b354;
 */
 
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
+  --primary-color: #c22323;
+  --secondary-color: #c22323;
   --text-color: #2b2b2b;
   --line-color: lightgray;
   --work-grid-color: lightgray;
   --heading-font-weight: 700;
   --dark-grey: darkgrey;
   --black: black;
+  --span-background-color: #000;
+  --span-color: #eaeaea;
 }
 
 html {
@@ -81,13 +83,12 @@ a::after {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
-  border-bottom: 2px solid lightgray;
+  padding: 0, 20px, 20px, 20px;
 }
 
 .page-header__item {
   width: 200px;
-  height: 70px;
+  height: 36px;
   flex: 0 1 200px;
 }
 
@@ -96,18 +97,8 @@ a::after {
   text-align: right;
 }
 
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin: 4px 0 0 15px;
-}
-
 .profile {
   display: flex;
-  flex: 1 1 auto;
   max-width: 1300px;
   margin: 0 auto;
   justify-content: space-evenly;
@@ -124,6 +115,25 @@ a::after {
   width: 250px;
   height: 250px;
   margin: 0 20px;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.navigation-list li {
+  display: inline-block;
+  padding-right: 14px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.social-media__icons {
+  width: 30px;
+  height: 30px;
 }
 
 .about-main {
@@ -299,4 +309,11 @@ button:focus,
   to {
     transform: translate(100px, 48px);
   }
+}
+
+span {
+  background-color: var(--span-background-color);
+  color: var(--span-color);
+  font-size: 12px;
+  padding: 3px;
 }
