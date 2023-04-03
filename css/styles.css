@@ -132,11 +132,6 @@ a::after {
   text-decoration: none;
 }
 
-.social-media__icons {
-  width: 30px;
-  height: 30px;
-}
-
 .about-main {
   display: flex;
   flex: 0 1 auto;
@@ -334,4 +329,11 @@ span {
   margin: 40px auto;
   padding: 0 30px;
   max-width: 700px;
+}
+
+.social-media__icons {
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  margin: 3px;
 }
