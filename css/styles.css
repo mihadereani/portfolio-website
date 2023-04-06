@@ -15,8 +15,8 @@ Secondary Color (Orange): #e0b354;
   --heading-font-weight: 700;
   --dark-grey: darkgrey;
   --black: black;
-  --span-background-color: #000;
-  --span-color: #eaeaea;
+  --span-background-color: #00000000;
+  --span-color: #c22323;
 }
 
 html {
@@ -34,10 +34,12 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: space-between;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  margin: auto;
 }
 
 h1 {
@@ -100,21 +102,22 @@ a::after {
 
 .profile {
   display: flex;
+  flex: 3;
   max-width: 1300px;
-  margin: 0 auto;
-  justify-content: space-evenly;
+  margin: 80px auto;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 .profile__content {
   margin: 0 20px;
+  max-width: 270px;
 }
 
 .profile__portrait {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  border-radius: 5%;
+  width: 480px;
+  height: 480px;
   margin: 0 20px;
 }
 
@@ -126,6 +129,7 @@ a::after {
 .navigation-list li {
   display: inline-block;
   padding-right: 14px;
+  font-size: 21px;
 }
 
 .navigation-list__item--active {
@@ -139,7 +143,7 @@ a::after {
   flex-direction: column;
   text-align: center;
   max-width: 700px;
-  margin: auto;
+  margin: 1px auto;
 }
 
 th {
@@ -208,8 +212,12 @@ button:focus,
 .page-footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: RGB(255, 255, 255, 0.5);
 }
 
 .sun {
@@ -312,7 +320,6 @@ button:focus,
 span {
   background-color: var(--span-background-color);
   color: var(--span-color);
-  font-size: 12px;
   padding: 3px;
 }
 
@@ -335,5 +342,34 @@ span {
   width: 30px;
   height: 30px;
   text-decoration: none;
-  margin: 3px;
+  margin: 14px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -999;
+}
+
+.header__text {
+  font-size: 25px;
+  padding-left: 27px;
+  margin: 16px;
+}
+
+.title__footer {
+  font-size: 25px;
+}
+
+.title__main {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 18px;
 }
