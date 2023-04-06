@@ -208,10 +208,11 @@ button:focus,
 
 .contact-container {
   display: flex;
+  flex: 1;
   flex-direction: column;
-
   justify-content: top;
   text-align: center;
+  margin: 70px 0;
 }
 
 .page-footer {
@@ -351,7 +352,7 @@ span {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
